@@ -29,7 +29,6 @@ class ViewController: UIViewController {
             if tempString.contains(" ") {
                 
                 selectedCity = tempString.replacingOccurrences(of: " ", with: "-") as NSString
-                print(selectedCity)
                 
             } else {
                 
@@ -64,21 +63,16 @@ class ViewController: UIViewController {
                             
                             if let contentArray = dataString?.components(separatedBy: stringSeperator) {
                                 
-                                if contentArray.count > 0 {
+                                if contentArray.count > 1 {
                                     
                                     stringSeperator = "</span>"
                                     
                                     let newContentArray = contentArray[1].components(separatedBy: stringSeperator)
                                     
-                                    if newContentArray.count > 0 {
+                                    if newContentArray.count > 1 {
                                         
                                         forecastData = newContentArray[0].replacingOccurrences(of: "&deg;", with: "°")
                                         
-                                        DispatchQueue.main.sync(execute: {
-                                            
-                                            self.forecastPlaceholder.text = forecastData
-                                            
-                                        })
                                         
                                     }
                                     
@@ -92,10 +86,31 @@ class ViewController: UIViewController {
                         
                     }
                     
+                    if forecastData == "" {
+                        
+                        DispatchQueue.main.sync(execute: {
+                        
+                            self.forecastPlaceholder.text = "The weather in this city could not be found. Please enter a different city"
+                        
+                        })
+                        
+                    } else {
+                        
+                        DispatchQueue.main.sync(execute: {
+                        
+                            self.forecastPlaceholder.text = forecastData
+                            
+                        })
+                        
+                    }
                     
                 }
                 
                 task.resume()
+                
+            } else {
+                
+                forecastPlaceholder.text = "Something went wrong. Please try again"
                 
             }
         }
