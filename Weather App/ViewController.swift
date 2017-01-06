@@ -9,10 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var selectedCity: NSString = ""
 
     @IBOutlet var cityTextInput: UITextField!
     
     @IBOutlet var forecastPlaceholder: UILabel!
+    
+    @IBAction func submitBtnPressed(_ sender: Any) {
+        
+        let optionalString = cityTextInput.text
+        
+        if let unwrappedString = optionalString {
+            
+            selectedCity = NSString(string: unwrappedString)
+            
+            
+            
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
