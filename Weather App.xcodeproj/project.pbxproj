@@ -12,6 +12,7 @@
 		1BC9E3D91E1F168D00051995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC9E3D71E1F168D00051995 /* Main.storyboard */; };
 		1BC9E3DB1E1F168D00051995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC9E3DA1E1F168D00051995 /* Assets.xcassets */; };
 		1BC9E3DE1E1F168D00051995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC9E3DC1E1F168D00051995 /* LaunchScreen.storyboard */; };
+		1BC9E3E81E1F199300051995 /* nduplkyrxqu-elena-prokofyeva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BC9E3E71E1F199300051995 /* nduplkyrxqu-elena-prokofyeva.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1BC9E3DA1E1F168D00051995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BC9E3DD1E1F168D00051995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BC9E3DF1E1F168D00051995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC9E3E71E1F199300051995 /* nduplkyrxqu-elena-prokofyeva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nduplkyrxqu-elena-prokofyeva.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				1BC9E3D51E1F168D00051995 /* ViewController.swift */,
 				1BC9E3D71E1F168D00051995 /* Main.storyboard */,
 				1BC9E3DA1E1F168D00051995 /* Assets.xcassets */,
+				1BC9E3E71E1F199300051995 /* nduplkyrxqu-elena-prokofyeva.jpg */,
 				1BC9E3DC1E1F168D00051995 /* LaunchScreen.storyboard */,
 				1BC9E3DF1E1F168D00051995 /* Info.plist */,
 			);
@@ -126,6 +129,7 @@
 			files = (
 				1BC9E3DE1E1F168D00051995 /* LaunchScreen.storyboard in Resources */,
 				1BC9E3DB1E1F168D00051995 /* Assets.xcassets in Resources */,
+				1BC9E3E81E1F199300051995 /* nduplkyrxqu-elena-prokofyeva.jpg in Resources */,
 				1BC9E3D91E1F168D00051995 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
