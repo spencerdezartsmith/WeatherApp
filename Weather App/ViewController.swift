@@ -24,6 +24,16 @@ class ViewController: UIViewController {
             
             selectedCity = NSString(string: unwrappedString)
             
+            // Check to make sure the string is formatted correctly
+            
+            if selectedCity.contains(" ") {
+                
+                selectedCity.replacingOccurrences(of: " ", with: "-")
+                
+            }
+            
+            
+            
             
             
         }
