@@ -72,7 +72,7 @@ class ViewController: UIViewController {
                                     
                                     if newContentArray.count > 0 {
                                         
-                                        forecastData = newContentArray[0]
+                                        forecastData = newContentArray[0].replacingOccurrences(of: "&deg;", with: "°")
                                         
                                         DispatchQueue.main.sync(execute: {
                                             
